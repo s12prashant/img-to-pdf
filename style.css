@@ -1,0 +1,100 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4e8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  width: 600px;
+}
+
+/* Top icon */
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Heading */
+h1 {
+  font-size: 40px;
+  color: #1f1f3d;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* Upload box */
+.upload-box {
+  border: 2px dashed #b9a8ff;
+  padding: 40px;
+  border-radius: 15px;
+  background: #faf9ff;
+}
+
+/* Upload text */
+.upload-text {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Format text */
+.formats {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* Choose button */
+.choose-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #7a5cff;
+  color: #7a5cff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.choose-btn:hover {
+  background: #7a5cff;
+  color: white;
+}
+
+/* OR line */
+.or {
+  margin: 20px 0;
+  color: #aaa;
+}
+
+/* Convert button */
+.convert-btn {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #7a5cff, #a855f7);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.convert-btn:hover {
+  opacity: 0.9;
+}
