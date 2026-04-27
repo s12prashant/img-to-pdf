@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image to PDF Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="icon">📄</div>
+
+  <h1>Image to PDF Converter</h1>
+  <p class="subtitle">
+    Convert your images into high-quality PDF files in seconds.
+  </p>
+
+  <div class="upload-box">
+    <p class="upload-text">Choose an image file</p>
+    <p class="formats">JPG, PNG, WEBP up to 10MB</p>
+
+    <input type="file" id="imageInput" multiple hidden>
+
+    <label for="imageInput" class="choose-btn">📁 Choose Files</label>
+  </div>
+
+  <div class="or">or</div>
+
+  <button onclick="convertToPDF()" class="convert-btn">
+    📄 Convert to PDF
+  </button>
+
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> 
+  <!-- jsPDF ek JavaScript library hai jo browser ke andar hi pdf bana deta hai -->
+  <script src="script.js"></script>
+</body>
+</html>
