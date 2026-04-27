@@ -3,37 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Image to PDF Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <div class="icon">📄</div>
+    <div class="icon">📄</div>
 
-  <h1>Image to PDF Converter</h1>
-  <p class="subtitle">
-    Convert your images into high-quality PDF files in seconds.
-  </p>
+    <h1>Image to PDF Converter</h1>
+    <p class="subtitle">
+      Convert your images into high-quality PDF files in seconds.
+    </p>
 
-  <div class="upload-box">
-    <p class="upload-text">Choose an image file</p>
-    <p class="formats">JPG, PNG, WEBP up to 10MB</p>
+    <!-- Upload-->
+    <div class="upload-box">
 
-    <input type="file" id="imageInput" multiple hidden>
+      <p class="upload-text">Choose an image file</p>
+      <p class="formats">JPG, PNG, WEBP up to 10MB</p>
 
-    <label for="imageInput" class="choose-btn">📁 Choose Files</label>
+      
+      <input type="file" id="imageInput" multiple accept="image/*" hidden> <!-- File Input -->
+
+      <!-- Button -->
+      <label for="imageInput" class="choose-btn">
+        📁 Choose Files
+      </label>
+
+    </div>
+
+    <!-- Preview Area -->
+    <div id="preview"></div>
+
+    <!-- Convert Button -->
+    <button onclick="convertToPDF()" class="convert-btn">
+      📄 Convert to PDF
+    </button>
+
   </div>
 
-  <div class="or">or</div>
-
-  <button onclick="convertToPDF()" class="convert-btn">
-    📄 Convert to PDF
-  </button>
-
-</div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> 
-  <!-- jsPDF ek JavaScript library hai jo browser ke andar hi pdf bana deta hai -->
+  <!-- jsPDF img to pdf ka kaam -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>

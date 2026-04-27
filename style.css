@@ -19,6 +19,8 @@ body {
 .container {
   text-align: center;
   width: 600px;
+  backdrop-filter:
+  blur(10px);
 }
 
 /* Top icon */
@@ -46,6 +48,21 @@ h1 {
   padding: 40px;
   border-radius: 15px;
   background: #faf9ff;
+}
+#preview {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#preview img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* Upload text */
